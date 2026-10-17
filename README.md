@@ -580,7 +580,7 @@ Follow these steps to set up and run the PatentBERT platform locally on **Window
 - **Python:** 3.10 or 3.11 installed.
 - **Node.js:** v18+ or v20+ with `npm`.
 - **Hardware:** 16 GB RAM recommended.
-- **Artifacts:** Ensure `patent_embeddings.index` and `patent_metadata.parquet` are placed in the `artifacts/` directory.
+- **Runtime Artifacts:** Because [`patent_embeddings.index`](artifacts/patent_embeddings.index) (615.57 MB) and [`patent_metadata.parquet`](artifacts/patent_metadata.parquet) (1.07 GB) exceed GitHub's 100 MB upload limit, they are excluded from Git via [`.gitignore`](.gitignore). Before starting the backend, place these two files into the `artifacts/` folder (the directory is preserved in the repository via `artifacts/.gitkeep`).
 
 ---
 
