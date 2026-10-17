@@ -1,0 +1,103 @@
+# ==========================================
+# PatentBERT Root .gitignore
+# ==========================================
+
+# --- Large ML Artifacts & Datasets (>100MB strictly blocked by GitHub) ---
+artifacts/*
+!artifacts/.gitkeep
+*.index
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# --- PyTorch & Transformer Model Checkpoints ---
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+checkpoints/
+models/
+weights/
+classifier_inference/
+
+# --- Python Virtual Environments & Packages ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Testing & Quality Assurance ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / Frontend (React + Vite) ---
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Environment Secrets & Credentials ---
+.env
+.env.*
+!.env.example
+
+# --- IDEs, Operating System & Editors ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# --- Logs & Temp ---
+logs/
+*.log
+tmp/
+temp/
